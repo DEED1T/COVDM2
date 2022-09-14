@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root {
+    --black: #202020;
+    --black-medium: #4b4b4b;
+    --white: #e0e0e0;
+    --grey: #707070;
+    --red: #f14b4d;
+}
+
+body {
+    background: var(--white) !important;
+    margin: 0;
+}
+
+h4 {
+    margin-top: 18px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    color: black;
+    font-family: "Poiret One" !important;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+h1 {
+    margin-top: 25px;
+    color: black;
+    font-family: "Poiret One" !important;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 25px;
+    color: var(--grey);
+    font-family: "Helvetica" !important;
+    font-size: 18px !important;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 25px;
+
+    color: var(--grey);
+    font-family: "Helvetica" !important;
+    font-size: 12px !important;
+    text-align: center;
+}
+
+p {
+    color: var(--grey);
+    font-family: "Helvetica" !important;
+    font-size: 13px;
+    text-align: center;
+}
+
+.input-form {
+    color: var(--black-medium);
+    font-family: "Poiret One" !important;
+    font-size: 18px !important;
+    text-align: center;
+}
+
+.formholder:placeholder-shown {
+    font-family: "Helvetica" !important;
+    color: #cccccc;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid grey;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav {
+    background-color: lightblue;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: var(--white);
+    font-family: "Poiret One";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 16px 10px;
+    margin: 0px 10px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.nav a:hover {
+    color: lightcoral;
+}
+
+.nav a.active {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.control {
+    float: right;
+    width: 940px;
+    height: 860px;
+    margin-left: 10px;
+    border: 2px solid grey;
+}
+
+.control-about-right {
+    float: right;
+    width: 940px;
+    height: 800px;
+    margin-right: 10px;
+    border: 2px solid grey;
+}
+
+.control-about {
+    float: right;
+    width: 940px;
+    height: 250px;
+    position: absolute;
+    right: 25%;
+    left:25%;
+    border: 2px solid grey;
+
+}
+
+.control-about-left {
+    float: left;
+    width: 940px;
+    height: 800px;
+    margin-left: 10px;
+    border: 2px solid grey;
+}
+
+a:hover {
+    color : lightcoral;
+}
+
+.popup {
+    display: inline-block;
+    align-self: center;
+    background-color: lightblue;
+    border-radius: 10px;
+    border: 4px #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 12px;
+    width: 150px;
+    height: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button {
+    display: inline-block;
+    background-color: lightblue;
+    border-radius: 10px;
+    border: 4px #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 20px;
+    width: 220px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+    
+    .button:hover {
+    background-color: lightcoral;
+    }
+
+#control-panel{
+    margin-left: 25px;
+}
+
+#pie {
+    margin-left: 80px;
+    width: 750px;
+}
+
+#chart-left{
+    width : 45%;
+    margin : 50px;
+    border-right: 1px solid grey;
+}
+
+#chart-right{
+    width : 45%;
+    margin: 50px;
+    border-left: 1px solid grey;
+}
+
+#left {
+    margin: 50px;
+    width: 45%;
+}
+
+#right {
+    margin-top: 50px;
+    width: 45%;
+}
+
+#espace {
+    margin: 10px;
+}
+
+#rdv {
+    border: 2px solid grey;
+    margin: 50px;
+}
+
+#map {
+    float: left;
+    width: 940px;
+    height: 860px;
+    border: 2px solid grey;
+}
+
+
+#title {
+    color: white;
+    font-size: 25px;
+}
+
+#border {
+    float: left;
+    height: 25px;
+    margin: 13px 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+#form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+        
+    
+#form-btn {
+         text-align: center;
+         margin-top: 20px;
+     }
+    
+
