@@ -17,9 +17,9 @@ sudo service mongodb start
 ## Lancer le projet
 
 ```bash
-npm start
+npm start 
 ```
 
 ## Visualisation du projet
 
-![](Animation.gif)
+![](assets/img/Animation.gif)
