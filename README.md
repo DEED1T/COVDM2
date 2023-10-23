@@ -8,12 +8,6 @@ Pour installer les modules nécessaires au projet :
 npm install
 ```
 
-Pour activer la base de données :
-
-```bash
-sudo service mongodb start
-```
-
 ## Lancer le projet
 
 ```bash
