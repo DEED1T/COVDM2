@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 app.use(morgan('tiny'));
 
 //DB connection
-connectDB();
+//connectDB();
 
 //parse request to body-parser
 app.use(bodyparser.urlencoded({extended:true}));
