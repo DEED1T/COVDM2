@@ -12,7 +12,7 @@ $( document ).ready(function() {
         url : 'getCenters',
         dataType: 'json',
         success: function(data) {
-            addCenters(data.docs);
+            addCenters(data);
         },
         failure: function(data){
             alert('Cannot get DATA due to an error');

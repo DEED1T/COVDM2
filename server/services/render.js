@@ -1,6 +1,7 @@
 const CentersDB = require('../model/modelP');
 const PatientsDB = require('../model/modelC');
 const dotenv = require('dotenv');
+const fs = require('fs').promises;
 
 // client
 exports.homeRoute = (req,res) => {
@@ -24,14 +25,12 @@ exports.aboutRoute = (req,res) => {
 };
 
 // API
-exports.centersRoute = (req,res) => {
-
-    CentersDB.find({}, function(err, docs) {
-        try{
-            return res.json({ docs })
-        }
-        catch(err){
-            console.log("Error while accessing centersRoutes :"+ err);
-        }
-    });
+exports.centersRoute = async (req, res) => {
+    try {
+        const data = await fs.readFile('./assets/json/centers.json', 'utf8');
+        res.json(JSON.parse(data));
+    } catch (error) {
+        console.error('Error reading JSON file:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
 };
